@@ -1,11 +1,9 @@
-import express, { query } from "express";
-import bcrypt from "bcrypt";
-import bodyParser from "body-parser";
-export const router = express.Router();
+import express from "express";
 import apiRouter from "./routes/api.js";
 import path from "path";
-import { fileURLToPath } from "url";
 import { dirname } from "path";
+import { fileURLToPath } from "url";
+import bodyParser from "body-parser";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
